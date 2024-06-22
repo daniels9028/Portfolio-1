@@ -67,7 +67,7 @@ const Navbar = () => {
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center cursor-pointer">
             <li>
               <Link
-                to="about"
+                to="#"
                 smooth={true}
                 onClick={closeNav}
                 offset={50}
