@@ -1,4 +1,3 @@
-import React from "react";
 import profile from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
@@ -8,19 +7,15 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
 } from "react-icons/ai";
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript1,
-  DiNodejsSmall,
-  DiReact,
-} from "react-icons/di";
+import { DiJavascript1 } from "react-icons/di";
 import { motion } from "framer-motion";
+import { FaGitAlt, FaLaravel, FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 const Hero = () => {
   return (
     <div className="mt-24 max-w-[1200px] mx-auto relative" id="about">
-      <div className="grid lg:grid-cols-2 place-items-center gap-8">
+      <div className="grid gap-8 px-8 lg:grid-cols-2 place-items-center lg:px-0">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +33,7 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-400 text-xl lg:text-4xl italic mb-4"
+            className="mb-4 text-xl italic font-bold text-gray-400 lg:text-4xl"
           />
 
           <motion.p
@@ -46,7 +41,7 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-gray-200 lg:text-7xl text-5xl tracking-tight mb-4"
+            className="mb-4 text-5xl tracking-tight text-gray-200 lg:text-7xl"
           >
             HEY , I AM <br />
             <span className="text-purple-500">DANIEL MARULI SITOHANG</span>
@@ -59,8 +54,10 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-200 lg:text-2xl text-lg mb-6 max-w-[300px] lg:max-w-[500px]"
           >
-            I'm a passionate full stack developer with over 2 years of
-            experience....
+            Saya adalah seorang Full Stack Developer yang berdedikasi dengan
+            pengalaman lebih dari 3 tahun dalam membangun dan memelihara
+            aplikasi web yang skalabel, menguasai secara mendalam teknologi
+            frontend maupun backend.
           </motion.p>
 
           <motion.div
@@ -68,24 +65,25 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="flex items-center gap-6 my-4 lg:mb-0"
+            className="flex flex-col items-center gap-6 my-4 lg:flex-row lg:mb-0"
           >
             <motion.button
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0,0,0,0.3)",
               }}
-              className="z-10 cursor-pointer font-bold text-gray-200 lg:w-auto p-4 border border-purple-400 rounded-xl"
+              className="z-10 p-4 font-bold text-gray-200 border border-purple-400 cursor-pointer lg:w-auto rounded-xl"
             >
               Download CV
             </motion.button>
 
-            <div className="flex items-center gap-6 text-4xl lg:text-6xl text-purple-400 z-20">
+            <div className="z-20 flex items-center gap-6 text-4xl text-purple-400 lg:text-6xl">
               <motion.a
                 whileHover={{
                   scale: 1.2,
                 }}
-                href="#"
+                target="_blank"
+                href="https://github.com/daniels9028"
               >
                 <AiOutlineGithub />
               </motion.a>
@@ -94,7 +92,8 @@ const Hero = () => {
                 whileHover={{
                   scale: 1.2,
                 }}
-                href="#"
+                target="_blank"
+                href="https://www.instagram.com/dniel.m.s/"
               >
                 <AiOutlineInstagram />
               </motion.a>
@@ -103,7 +102,8 @@ const Hero = () => {
                 whileHover={{
                   scale: 1.2,
                 }}
-                href="#"
+                target="_blank"
+                href="https://www.linkedin.com/in/daniel-maruli-sitohang/"
               >
                 <AiOutlineLinkedin />
               </motion.a>
@@ -112,7 +112,8 @@ const Hero = () => {
                 whileHover={{
                   scale: 1.2,
                 }}
-                href="#"
+                target="_blank"
+                href="https://www.facebook.com/daniels9027/"
               >
                 <AiOutlineFacebook />
               </motion.a>
@@ -135,14 +136,16 @@ const Hero = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
+        className="flex flex-col items-center justify-center w-full gap-4 px-12 py-24 lg:flex-row text-7xl md:px-0"
       >
-        <p className="text-gray-200 mr-6">My Tech Stack</p>
-        <DiHtml5 className="text-orange-600 mx-2" />
-        <DiCss3 className="text-blue-600 mx-2" />
-        <DiJavascript1 className="text-yellow-500 mx-2" />
-        <DiReact className="text-blue-500 mx-2" />
-        <DiNodejsSmall className="text-green-500 mx-2" />
+        <p className="mr-6 text-gray-200">My Tech Stack</p>
+        <div className="flex flex-row">
+          <FaLaravel className="mx-2 text-orange-600" size={30} />
+          <FaReact className="mx-2 text-blue-600" size={30} />
+          <DiJavascript1 className="mx-2 text-yellow-500" size={30} />
+          <SiTailwindcss className="mx-2 text-blue-500" size={30} />
+          <FaGitAlt className="mx-2 text-green-500" size={30} />
+        </div>
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">
