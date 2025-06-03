@@ -106,7 +106,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
+    <div className="max-w-[1200px] mx-auto p-6 md:my-20" id="portfolio">
       <h2 className="mb-8 text-3xl font-bold text-center text-gray-200">
         Portfolio
       </h2>

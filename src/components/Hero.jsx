@@ -13,6 +13,15 @@ import { FaGitAlt, FaLaravel, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
 const Hero = () => {
+  const handleDownloadCv = () => {
+    const link = document.createElement("a");
+    link.href = "/Resume_DanielMaruliSitohang.pdf";
+    link.download = "Resume_DanielMaruliSitohang.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="mt-24 max-w-[1200px] mx-auto relative" id="about">
       <div className="grid gap-8 px-8 lg:grid-cols-2 place-items-center lg:px-0">
@@ -72,6 +81,7 @@ const Hero = () => {
                 scale: 1.05,
                 boxShadow: "0px 0px 8px rgba(0,0,0,0.3)",
               }}
+              onClick={handleDownloadCv}
               className="z-10 p-4 font-bold text-gray-200 border border-purple-400 cursor-pointer lg:w-auto rounded-xl"
             >
               Download CV

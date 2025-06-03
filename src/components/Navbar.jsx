@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full bg-opacity-70 backdrop-blur-md">
-      <div className="max-w-[1300px] mx-auto flex justify-between text-gray-200 text-xl items-center px-12 h-20">
+      <div className="max-w-[1200px] mx-auto flex justify-between text-gray-200 text-xl items-center px-12 h-20">
         <a href="#">Daniel Maruli Sitohang</a>
 
         <ul className="z-10 hidden gap-12 cursor-pointer md:flex">

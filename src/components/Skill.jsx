@@ -101,7 +101,7 @@ const skills = [
 const Skill = () => {
   return (
     <div
-      className="flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 max-w-[650px] mx-auto"
+      className="flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 max-w-[1200px] mx-auto"
       id="skills"
     >
       <Reveal>

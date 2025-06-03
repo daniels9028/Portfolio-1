@@ -3,7 +3,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <section className="px-8 max-w-[1000px] mx-auto md:my-20" id="contact">
+    <section className="px-8 max-w-[1200px] mx-auto md:my-20" id="contact">
       <div className="grid lg:grid-cols-1 place-items-center">
         <div>
           <div className="my-3 text-gray-300 ">
@@ -19,7 +19,7 @@ const Contact = () => {
 
           <div className="flex flex-row items-center gap-4 mt-4 font-semibold text-gray-400">
             <FaWhatsapp className="text-red-400" size={25} />
-            <p>+878-4055-9089</p>
+            <p>0878-4055-9089</p>
           </div>
 
           <div className="flex items-center mt-10 gap-7">
