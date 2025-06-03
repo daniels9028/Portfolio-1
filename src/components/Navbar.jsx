@@ -77,13 +77,13 @@ const Navbar = () => {
           variants={menuVariants}
           className="fixed top-0 left-0 z-40 w-full min-h-screen bg-gray-900"
         >
-          <ul className="mt-24 space-y-8 text-4xl font-semibold text-center cursor-pointer">
+          <ul className="mt-20 space-y-4 text-xl font-semibold text-center cursor-pointer">
             <li>
               <Link
                 to="about"
                 smooth={true}
                 onClick={closeNav}
-                offset={50}
+                offset={-100}
                 duration={500}
               >
                 About
@@ -91,10 +91,21 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="skills"
+                smooth={true}
+                onClick={closeNav}
+                offset={-100}
+                duration={500}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="portfolio"
                 smooth={true}
                 onClick={closeNav}
-                offset={50}
+                offset={-50}
                 duration={500}
               >
                 Portfolio
@@ -102,10 +113,21 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="experience"
+                smooth={true}
+                onClick={closeNav}
+                offset={-50}
+                duration={500}
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="contact"
                 smooth={true}
                 onClick={closeNav}
-                offset={50}
+                offset={-50}
                 duration={500}
               >
                 Contact
